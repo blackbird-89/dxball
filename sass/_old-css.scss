@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/main.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+

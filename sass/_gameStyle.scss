@@ -1,0 +1,261 @@
+
+  .game2 {
+  
+    background-image: url("/images/main.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+     
+  }
+  .arrowleft, .arrowright{
+    display:none;
+  }
+
+  .score {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  .lives {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+
+  .main-text {
+    display:none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 350px;
+  }
+
+  .paddle { 
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  
+  }
+
+  .brick {
+    
+      left: 0;
+      background-color: #777;
+      position: absolute;
+      z-index: 1;
+  
+  }
+
+  .ball {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+
+  .game {
+    position: relative;
+    background-color: grey; 
+    background-repeat: no-repeat;
+    background-image: url("/images/backsecond.jpg");
+    background-size: cover;
+    color: white;
+    min-height: 550px;
+    min-width: 750px;
+    margin:auto;
+    border: 10px solid black;
+  }
+
+  
+    
+  .ball {
+    background-image:url("/images/ball_silver.png");
+    background-size: cover;
+  
+  }
+
+
+  //extra large
+  @media only screen and (min-width: 1200px) {
+    .game {
+      height:624px;
+    min-width:930px;
+    max-width:930px;
+    }
+
+    .paddle {
+    
+      width: 200px;
+      height: 40px; 
+      background-color: grey;
+      background-image: url("/images/new.jpg");
+      background-size: cover;
+    }  
+    .brick {
+      left: 5px;
+      top: 200px;
+      width: 90px;
+      height: 30px;
+    }
+  }
+
+
+  //large
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .game {
+      height:500px;
+      min-width:750px;
+      max-width:750px;
+      
+  }
+
+  .paddle {
+    left:270px;
+    height: 30px;
+    width: 150px;
+    background-image: url("/images/new.jpg");
+    background-size:150px 30px;
+}
+.brick {
+    left: 5px; 
+    top: 150px;
+    width: 72px;
+    height: 20px;
+
+}
+
+  }
+
+  //medium
+  @media only screen and (min-width: 660px) and (max-width: 992px) {
+    
+    
+    .game {
+      height:160px;
+      min-width:660px;
+      max-width:660px;
+      
+  }
+
+  .paddle {
+    left:298px;
+    height: 35px;
+    width: 140px;
+    background-image: url("/images/new.jpg");
+    background-size:140px 35px;
+  }
+
+  .brick {
+    top: 200px;
+    width: 42px;
+    height: 18px;
+}
+}
+
+  //small
+  @media only screen and (max-width: 659px){
+    .game {
+      height:400px;
+      min-width:340px;
+      max-width:340px;
+  }
+
+  .paddle {
+    left:120px;
+    height: 25px;
+    width: 100px;
+    background-image: url("/images/new.jpg");
+    background-size:100px 25px;
+}
+
+.brick {
+  top: 135px;
+  width: 32px;
+  height: 8px;
+}
+  }
+
+  //mobile portrait
+  @media only screen and (min-width: 660px) and (max-width: 999px) and (orientation: portrait){
+    .game {
+      height:1200px;
+      min-width:790px;
+      max-width:790px;
+  }
+
+  .paddle {
+    left:250px;
+    height: 25px;
+    width: 100px;
+    background-image: url("/images/new.jpg");
+    background-size:100px 25px;
+}
+
+.brick {
+  top: 135px;
+  width: 77px;
+  height: 15px;
+}
+
+.arrowright {
+  //display:block;
+  top: 1550px;
+  right:100px;
+}
+.arrowleft {
+  //display:block;
+  top:1550px;
+  left:100px;
+}
+.arrowleftimage, .arrowrightimage {
+  width: 120px;
+  height:120px;
+}
+  }
+    //mobile landscape
+    @media only screen and (min-width: 660px) and (max-width: 999px) and (orientation: landscape){
+      .game {
+        height:430px;
+        min-width:660px;
+        max-width:660px;
+    }
+  
+    .paddle {
+      left:250px;
+      height: 25px;
+      width: 100px;
+      background-image: url("/images/new.jpg");
+      background-size:100px 25px;
+  }
+  
+  .brick {
+    top: 135px;
+    width: 64px;
+    height: 12px;
+  }
+
+  .arrowleft {
+    //display:block;
+    top:320px;
+    left:50px;
+}
+.arrowright {
+    //display:block;
+    top:320px;
+    right:50px;
+}
+.arrowleftimage, .arrowrightimage {
+    width: 80px;
+    height:80px;
+}
+    }
+
+
+    .arrowrightimage {
+
+      float: right;
+    }
+
